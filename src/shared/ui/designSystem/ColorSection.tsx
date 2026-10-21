@@ -23,7 +23,7 @@ export const ColorSection = () => {
     return (
         <section className="ds_section">
             <h2 className="text-mdTtl mb-5 text-coffee-900">Colors</h2>
-            <div className="flex bg-beige rounded-full p-10  flex-wrap">
+            <div className="flex bg-beige rounded-full px-20 py-10  flex-wrap">
                 {colorList.map((item, index) => {
                     return (
                         <div className="mr-8 flex flex-col items-center" key={index}>

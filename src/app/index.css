@@ -14,7 +14,7 @@
     /*<------------- Buttons ------------->*/
 
     .mdRound_dark_btn {
-        @apply bg-coffee-900 px-8 py-3 rounded-2xl text-white font-bold text-[14px] font-[sans-serif] hover:bg-black
+        @apply bg-coffee-900 px-8 py-3 rounded-2xl text-white font-bold text-smTxt font-sans hover:bg-black  transition-all duration-300
     }
     .mdRound_dark_btn-bigSize {
         @apply w-[400px] rounded-2xl bg-coffee-900 py-4 text-mdTxt font-bold font-sans text-terracotta text-center hover:bg-black transition-all duration-300
@@ -29,19 +29,19 @@
         @apply py-2.5 px-4 rounded-2xl text-white font-sans bg-coffee-900/10 hover:bg-coffee-900/20 transition-all duration-300
     }
     .mdRound_light_btn-time {
-        @apply py-3 px-4 rounded-xl text-smTxt font-medium transition-all border-[1px] bg-white/30 text-coffee-900 border-white/20 hover:bg-white/50
+        @apply py-3 px-4 rounded-xl text-smTxt font-medium transition-all border-1 bg-white/30 text-coffee-900 border-white/20 hover:bg-white/50
     }
     .mdRound_dark_btn-time {
         @apply py-3 px-4 rounded-xl text-smTxt font-medium transition-all border bg-coffee-900 text-white border-coffee-900 shadow-lg scale-105
     }
     .flRound_dark_btn {
-        @apply bg-coffee-900 px-8 py-4 rounded-full text-white font-sans font-bold hover:bg-black
+        @apply bg-coffee-900 px-8 py-4 rounded-full text-white font-sans font-bold hover:bg-black transition-all duration-300
     }
     .flRound_dark_btn-aftIcon {
-        @apply px-10 py-4 bg-coffee-900 text-mdTxt text-white font-sans font-bold rounded-full
+        @apply px-10 py-4 bg-coffee-900 text-mdTxt text-white font-sans font-bold rounded-full hover:bg-black transition-all duration-300
     }
     .flRound_light_btn {
-        @apply px-8 py-4 rounded-full text-coffee-900 bg-coffee-900/5 font-sans font-bold border-[1px] border-coffee-900/10 hover:border-coffee-900/20 hover:bg-[#0000004d]
+        @apply px-8 py-4 rounded-full text-coffee-900 bg-coffee-900/5 font-sans font-bold border-1 border-coffee-900/10 hover:border-coffee-900/20 hover:bg-white/10
     }
     .flRound_dark_btn-smallSize {
         @apply bg-coffee-900 py-2.5 px-6 rounded-full text-white font-bold font-sans text-smTxt transition-all duration-300
@@ -61,13 +61,13 @@
     /*<------------- Badges ------------->*/
 
     .icon_badge {
-        @apply w-[20px] h-[20px] bg-terracotta border-[#e8af9e] border-[2px] rounded-[8px] text-sm3Txt text-white text-center font-sans font-bold
+        @apply w-[20px] h-[20px] bg-terracotta border-light-bd border-2 rounded-lg text-sm3Txt text-white text-center font-sans font-bold
     }
     .bestSeller_badge {
         @apply px-3.5 py-1.5 bg-terracotta rounded-full font-bold font-sans text-sm2Txt text-white
     }
     .product_price {
-        @apply px-4 py-2 text-smTxt text-white font-bold font-sans rounded-full border-white/20 border-[1px] bg-coffee-900/60
+        @apply px-4 py-2 text-smTxt text-white font-bold font-sans rounded-full border-white/20 border-1 bg-coffee-900/60
     }
     .fav_badge {
         @apply flex items-center gap-1.5 text-terracotta text-sm font-bold bg-terracotta/10 px-2 py-0.5 rounded-lg
@@ -78,15 +78,8 @@
 
     /*<------------- Cards ------------->*/
 
-    .cafe_image_card {
-        @apply w-[350px] h-[400px] group-hover:opacity-100 rounded-2xl rounded-[35px] p-3.5 border-[1px] border-coffee-200 shadow-xl
-    }
-    .cafe_image_card-img {
-        @apply w-full h-full rounded-[30px] object-cover
-    }
-
     .about_image_card {
-        @apply relative w-[700px] h-[500px] rounded-[32px] overflow-hidden shadow-2xl border-4 sm:border-8 border-white group-hover:border-white/50 transition-colors duration-500
+        @apply relative w-[700px] h-[500px] rounded-card overflow-hidden shadow-2xl border-4 sm:border-8 border-white group-hover:border-white/50 transition-colors duration-500
     }
     .about_image_card-img {
         @apply w-full h-full object-cover transform hover:scale-110 transition-transform duration-1000
@@ -96,13 +89,13 @@
         @apply w-56 h-56 mx-auto rounded-full overflow-hidden border-8 border-white shadow-xl relative z-10
     }
     .staff_image_card-img {
-        @apply w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700
+        @apply w-full h-full object-cover transform hover:scale-110 transition-transform duration-700
     }
     
     .map_image_card {
-        @apply relative p-4 rounded-[48px] shadow-2xl border border-white/40 overflow-hidden
+        @apply relative p-4 rounded-card-lg shadow-2xl border border-white/40 overflow-hidden
     }
     .map_image_card-img {
-        @apply w-full h-full object-cover rounded-[46px]
+        @apply w-full h-full object-cover rounded-card-lg
     }
 }
