@@ -6,7 +6,7 @@ import { FaPlus } from "react-icons/fa6";
 
 export const ProductCard = ({name, description, price, img, rating} : {name: string, description: string, price: string, img: string, rating: number}) => {
     return (
-        <div className="w-[350px] h-[430px] bg-white/8 rounded-[40px] shadow-xl border-[1px] border-white ">
+        <div className="w-[350px] h-[430px] bg-white/8 rounded-[40px] shadow-xl border-1 border-white ">
             <div className={`w-100 h-1/2 relative rounded-t-[40px] object-cover overflow-hidden`}>
                 <img src={img} alt={name} className="w-full h-full rounded-t-[40px] hover:scale-110 bg-center transition-all duration-300"/>
                 <Badge content="BEST SELLER" className="bestSeller_badge absolute top-[20px] left-[20px]"/>

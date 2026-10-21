@@ -5,7 +5,7 @@ import { CtrlBtn } from "../buttons/CtrlBtn";
 
 export const CartCard = ({img, name, price, amount} : {img: string, name: string, price: number, amount: number}) => {
     return (
-        <div className="w-full p-4 rounded-xl flex gap-4 items-center border-[1px] border-white shadow-xl">
+        <div className="w-full p-4 rounded-xl flex gap-4 items-center border-1 border-white shadow-xl">
             <img className="w-20 h-20 rounded-lg object-cover" src={img} alt={name} />
             <div>
                 <h4 className="font-bold text-coffee-900">{name}</h4>

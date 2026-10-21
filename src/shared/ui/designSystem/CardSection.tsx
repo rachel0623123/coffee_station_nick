@@ -15,6 +15,7 @@ import customerSrc from "../../../assets/images/customers/photo-1494790108377-be
 
 import { ContactCard } from "../card/ContactCard";
 import { CartCard } from "../card/CartCard";
+import { AmbienceCard } from "../card/AmbienceCard";
 
 export const CardSection = () => {
     return (
@@ -26,7 +27,7 @@ export const CardSection = () => {
                     <ProductCard name="Classic Latte" description="Rich espresso with steamed milk and a light layer of foam." price="$4.50" img={productSrc} rating={4.8}/>
                 </div>
                 <div className="ds_section_content">
-                    <ImageCard src={cafeSrc} divStyle="cafe_image_card" imgStyle="cafe_image_card-img"/>
+                    <AmbienceCard src={cafeSrc} />
                 </div>
                 <div className="ds_section_content">
                     <ContactCard title="Visit Us" content="PDPM IIITDM JABALPUR, Chandeli" icon={FiMapPin} />

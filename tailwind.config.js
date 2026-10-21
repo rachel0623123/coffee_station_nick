@@ -25,6 +25,7 @@ export default {
         cream: '#F4F1EA',
         beige: '#E6DCCF',
         terracotta: '#D1603D',
+        "light-bd": '#e8af9e'
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
@@ -38,6 +39,7 @@ export default {
         Ttl: "36px",
         smTtl: "30px",
 
+        hgTxt: "28px",
         lgTxt: "24px",
         bgTxt: "20px",
         mdTxt: "18px",
@@ -45,7 +47,30 @@ export default {
         sm1Txt: "12px",
         sm2Txt: "11px",
         sm3Txt: "10px",
-      }
+      },
+      spacing: {
+        section: "96px",
+        "section-sm": "64px",
+        "section-lg": "128px",
+
+        "content-sm": "16px",
+        content: "24px",
+        "content-lg": "32px",
+
+        "card-sm": "16px",
+        card: "24px",
+        "card-lg": "32px",
+      },
+      borderRadius: {
+        card: '40px',
+        "card-lg": "50px",
+      },
+      borderWidth: {
+        1: '1px',
+        2: '2px',
+        5: '5px',
+        8: '8px',
+      },
     }
   },
   plugins: [],
