@@ -48,19 +48,6 @@ export default {
         sm2Txt: "11px",
         sm3Txt: "10px",
       },
-      spacing: {
-        section: "96px",
-        "section-sm": "64px",
-        "section-lg": "128px",
-
-        "content-sm": "16px",
-        content: "24px",
-        "content-lg": "32px",
-
-        "card-sm": "16px",
-        card: "24px",
-        "card-lg": "32px",
-      },
       borderRadius: {
         card: '40px',
         "card-lg": "50px",
