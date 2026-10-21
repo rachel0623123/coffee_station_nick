@@ -7,8 +7,8 @@ import { FaMinus } from "react-icons/fa6";
 export const BtnSection = () => {
     return (
         <section className="ds_section">
-            <h2 className="text-mdTtl mb-5">Buttons</h2>
-            <div className="flex flex-wrap bg-coffee-100 p-4 rounded-2xl">
+            <h2 className="text-mdTtl mb-5 text-coffee-900">Buttons</h2>
+            <div className="flex flex-wrap bg-beige p-4 rounded-2xl">
 
                 {/*<--------------------- Middle Round Buttons ----------------------->*/}
                 <div className="ds_section_content">
@@ -18,7 +18,7 @@ export const BtnSection = () => {
 
                 <div className="ds_section_content">
                     <Button content="Checkout" className="mdRound_dark_btn-bigSize" />
-                    <p>mdRound_dark_btn-bisSize</p>
+                    <p>mdRound_dark_btn-bigSize</p>
                 </div>
                 
                 <div className="ds_section_content">
@@ -55,7 +55,7 @@ export const BtnSection = () => {
 
                 <div className="ds_section_content">
                     <Button content="View Full Menu →" className="flRound_dark_btn-aftIcon" />
-                    <p>flRound_light_btn</p>
+                    <p>flRound_dark_btn-aftIcon</p>
                 </div>
 
                 <div className="ds_section_content">

@@ -1,16 +1,6 @@
 import type { IconType } from "react-icons";
 
-type ContactCardProps = {
-    title: string;
-    content: string;
-    icon: IconType;
-};
-
-export const ContactCard = ({
-    title,
-    content,
-    icon: Icon,
-}: ContactCardProps) => {
+export const ContactCard = ({title, content, icon: Icon,}: {title: string, content: string, icon: IconType;}) => {
   return (
     <div className="w-[250px] h-[270px] p-10 rounded-[40px] text-center flex flex-col items-center hover:bg-white/40 transition-all duration-500 group border-[1px] border-white/20 shadow-xl ">
         <div className="p-5 bg-coffee-900 text-white rounded-3xl mb-8 group-hover:rotate-6 transition-transform duration-300 shadow-lg text-[28px]">

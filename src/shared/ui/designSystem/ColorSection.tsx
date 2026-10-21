@@ -1,4 +1,4 @@
-import { ColorCard } from "../ColorBox";
+import { ColorBox } from "../ColorBox";
 
 const colorList = [
     "bg-coffee-50",
@@ -22,12 +22,12 @@ const colorList = [
 export const ColorSection = () => {
     return (
         <section className="ds_section">
-            <h2 className="text-mdTtl mb-5">Colors</h2>
-            <div className="flex bg-blue-400 rounded-full p-10  flex-wrap">
+            <h2 className="text-mdTtl mb-5 text-coffee-900">Colors</h2>
+            <div className="flex bg-beige rounded-full p-10  flex-wrap">
                 {colorList.map((item, index) => {
                     return (
                         <div className="mr-8 flex flex-col items-center" key={index}>
-                            <ColorCard key={index} color={item}/>
+                            <ColorBox key={index} color={item}/>
                             <p className="mt-5">{item}</p>
                         </div>
                     );

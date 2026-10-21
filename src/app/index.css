@@ -79,7 +79,7 @@
     /*<------------- Cards ------------->*/
 
     .cafe_image_card {
-        @apply w-[350px] h-[400px] group-hover:opacity-100 rounded-2xl rounded-[35px] p-3.5 border-[1px] border-coffee-200
+        @apply w-[350px] h-[400px] group-hover:opacity-100 rounded-2xl rounded-[35px] p-3.5 border-[1px] border-coffee-200 shadow-xl
     }
     .cafe_image_card-img {
         @apply w-full h-full rounded-[30px] object-cover
