@@ -22,7 +22,6 @@ export const CardSection = () => {
         <section className="ds_section">
             <h2 className="text-mdTtl mb-5 text-coffee-900">Cards</h2>
             <div className="flex flex-wrap bg-beige p-8 rounded-2xl">
-                {/* <ProductCard id={products[0].id} name={products[0].name} category={products[0].category} description={products[0].description} price={products[0].price} image={products[0].image} rating={products[0].rating}/> */}
                 <div className="ds_section_content">
                     <ProductCard name="Classic Latte" description="Rich espresso with steamed milk and a light layer of foam." price="$4.50" img={productSrc} rating={4.8}/>
                 </div>
