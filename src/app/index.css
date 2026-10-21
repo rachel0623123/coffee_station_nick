@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .ds_section {
+        @apply bg-white p-10 mb-10 rounded-xl
+    }
+    .ds_section_content {
+        @apply mr-8 mb-10 flex flex-col items-center
+    }
+
+    /*<------------- Buttons ------------->*/
+
+    .mdRound_dark_btn {
+        @apply bg-coffee-900 px-8 py-3 rounded-2xl text-white font-bold text-smTxt font-sans hover:bg-black  transition-all duration-300
+    }
+    .mdRound_dark_btn-bigSize {
+        @apply w-[400px] rounded-2xl bg-coffee-900 py-4 text-mdTxt font-bold font-sans text-terracotta text-center hover:bg-black transition-all duration-300
+    }
+    .mdRound_light_icon_btn-hoverDark {
+        @apply w-full bg-coffee-900/5 py-3.5 text-coffee-900 transition duration-300 flex items-center justify-center font-bold rounded-2xl hover:bg-coffee-900 hover:text-white
+    }
+    .mdRound_light_btn-bigSize {
+        @apply px-10 py-6 bg-coffee-50 rounded-2xl text-coffee-900 text-mdTxt font-sans font-bold hover:bg-white
+    }
+    .mdRound_light_btn-search {
+        @apply py-2.5 px-4 rounded-2xl text-white font-sans bg-coffee-900/10 hover:bg-coffee-900/20 transition-all duration-300
+    }
+    .mdRound_light_btn-time {
+        @apply py-3 px-4 rounded-xl text-smTxt font-medium transition-all border-1 bg-white/30 text-coffee-900 border-white/20 hover:bg-white/50
+    }
+    .mdRound_dark_btn-time {
+        @apply py-3 px-4 rounded-xl text-smTxt font-medium transition-all border bg-coffee-900 text-white border-coffee-900 shadow-lg scale-105
+    }
+    .flRound_dark_btn {
+        @apply bg-coffee-900 px-8 py-4 rounded-full text-white font-sans font-bold hover:bg-black transition-all duration-300
+    }
+    .flRound_dark_btn-aftIcon {
+        @apply px-10 py-4 bg-coffee-900 text-mdTxt text-white font-sans font-bold rounded-full hover:bg-black transition-all duration-300
+    }
+    .flRound_light_btn {
+        @apply px-8 py-4 rounded-full text-coffee-900 bg-coffee-900/5 font-sans font-bold border-1 border-coffee-900/10 hover:border-coffee-900/20 hover:bg-white/10
+    }
+    .flRound_dark_btn-smallSize {
+        @apply bg-coffee-900 py-2.5 px-6 rounded-full text-white font-bold font-sans text-smTxt transition-all duration-300
+    }
+    .flRound_light_btn-smallSize {
+        @apply bg-transparent py-2.5 px-6 rounded-full text-coffee-800 font-bold font-sans text-smTxt transition-all duration-300 hover:bg-white/40 hover:text-coffee-900
+    }
+
+
+    .circle_dark_ctrl_btn {
+        @apply w-6 h-6 rounded-full bg-coffee-900 text-white flex items-center justify-center hover:bg-coffee-800 transition-colors text-smTxt
+    }
+    .circle_light_ctrl_btn {
+        @apply w-6 h-6 rounded-full bg-white/30 flex items-center justify-center hover:bg-white/50 transition-colors text-smTxt
+    }
+
+    /*<------------- Badges ------------->*/
+
+    .icon_badge {
+        @apply w-[20px] h-[20px] bg-terracotta border-light-bd border-2 rounded-lg text-sm3Txt text-white text-center font-sans font-bold
+    }
+    .bestSeller_badge {
+        @apply px-3.5 py-1.5 bg-terracotta rounded-full font-bold font-sans text-sm2Txt text-white
+    }
+    .product_price {
+        @apply px-4 py-2 text-smTxt text-white font-bold font-sans rounded-full border-white/20 border-1 bg-coffee-900/60
+    }
+    .fav_badge {
+        @apply flex items-center gap-1.5 text-terracotta text-sm font-bold bg-terracotta/10 px-2 py-0.5 rounded-lg
+    }
+    .flRound_light_badge-icon {
+        @apply inline-flex items-center gap-2 px-3 py-1.5 text-smTxt bg-white/20 backdrop-blur-md rounded-full text-coffee-900 font-bold mb-4 border border-white/10
+    }
+
+    /*<------------- Cards ------------->*/
+
+    .about_image_card {
+        @apply relative w-[700px] h-[500px] rounded-card overflow-hidden shadow-2xl border-4 sm:border-8 border-white group-hover:border-white/50 transition-colors duration-500
+    }
+    .about_image_card-img {
+        @apply w-full h-full object-cover transform hover:scale-110 transition-transform duration-1000
+    }
+
+    .staff_image_card {
+        @apply w-56 h-56 mx-auto rounded-full overflow-hidden border-8 border-white shadow-xl relative z-10
+    }
+    .staff_image_card-img {
+        @apply w-full h-full object-cover transform hover:scale-110 transition-transform duration-700
+    }
+    
+    .map_image_card {
+        @apply relative p-4 rounded-card-lg shadow-2xl border border-white/40 overflow-hidden
+    }
+    .map_image_card-img {
+        @apply w-full h-full object-cover rounded-card-lg
+    }
+}
