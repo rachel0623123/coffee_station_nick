@@ -3,6 +3,22 @@
 @tailwind utilities;
 
 
+body {
+    @apply bg-cream text-coffee-900 font-sans antialiased overflow-x-hidden;
+    background:
+      radial-gradient(circle at top left, rgba(230, 220, 207, 0.5), transparent 40%),
+      radial-gradient(circle at bottom right, rgba(209, 96, 61, 0.05), transparent 40%),
+      linear-gradient(135deg, #f5e6d3 0%, #e6c9a8 50%, #d7b899 100%);
+    min-height: 100vh;
+    position: relative;
+}
+
+main {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin: auto;
+}
+
 @layer components {
     .ds_section {
         @apply bg-white p-10 mb-10 rounded-xl
@@ -26,7 +42,7 @@
         @apply px-10 py-6 bg-coffee-50 rounded-2xl text-coffee-900 text-mdTxt font-sans font-bold hover:bg-white
     }
     .mdRound_light_btn-search {
-        @apply py-2.5 px-4 rounded-2xl text-white font-sans bg-coffee-900/10 hover:bg-coffee-900/20 transition-all duration-300
+        @apply bg-white/10 hover:bg-white/20 px-4 py-2.5 rounded-xl text-sm font-bold transition-colors
     }
     .mdRound_light_btn-time {
         @apply py-3 px-4 rounded-xl text-smTxt font-medium transition-all border-1 bg-white/30 text-coffee-900 border-white/20 hover:bg-white/50
@@ -57,11 +73,18 @@
     .circle_light_ctrl_btn {
         @apply w-6 h-6 rounded-full bg-white/30 flex items-center justify-center hover:bg-white/50 transition-colors text-smTxt
     }
+    .nav_btn_header {
+        @apply text-sm font-bold tracking-widest transition-all duration-300 relative uppercase text-coffee-900/50 hover:text-coffee-900
+    }
+    .nav_btn_header-act {
+        @apply text-sm font-bold tracking-widest transition-all duration-300 relative uppercase text-coffee-900
+    }
+
 
     /*<------------- Badges ------------->*/
 
     .icon_badge {
-        @apply w-[20px] h-[20px] bg-terracotta border-light-bd border-2 rounded-lg text-sm3Txt text-white text-center font-sans font-bold
+        @apply w-5 h-5 bg-terracotta text-white text-sm3Txt font-bold rounded-lg flex items-center justify-center shadow-lg border-2 border-white/50
     }
     .bestSeller_badge {
         @apply px-3.5 py-1.5 bg-terracotta rounded-full font-bold font-sans text-sm2Txt text-white

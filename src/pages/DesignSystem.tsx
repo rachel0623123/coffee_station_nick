@@ -6,8 +6,8 @@ import { FontSection } from "../shared/ui/designSystem/FontSection";
 
 export const DesignSystem = () => {
     return (
-        <main className="p-10 bg-cream min-h-[100vh]">
-            <h1 className="text-lgTtl text-coffee-900 mb-5">Design System</h1>
+        <main className="w-lg min-h-[100vh]">
+            <h1 className="text-lgTtl text-coffee-900 my-10">Design <span className="italic font-serif text-coffee-600">System</span></h1>
             <ColorSection/>
             <FontSection/>
             <BtnSection/>

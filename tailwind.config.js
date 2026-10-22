@@ -48,6 +48,10 @@ export default {
         sm2Txt: "11px",
         sm3Txt: "10px",
       },
+      width: {
+        lg: "1536px",
+        md: "1024px",
+      },
       borderRadius: {
         card: '40px',
         "card-lg": "50px",
