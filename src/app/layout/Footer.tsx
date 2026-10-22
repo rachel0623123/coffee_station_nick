@@ -37,7 +37,7 @@ export const Footer = () => {
                             {links.map((Icon, index) => {
                                 return (
                                     <Link to="#" key={index} className="p-3 bg-white/5 rounded-2xl hover:bg-white/10 border border-white/10 group hover:scale-110 transition-all duration-300">
-                                        <Icon className="lucide lucide-twitter text-bgTxt w-5h-5 group-hover:text-terracotta transition-colors" />
+                                        <Icon className="text-bgTxt group-hover:text-terracotta transition-colors" />
                                     </Link>
                                 );
                             })}
@@ -81,7 +81,7 @@ export const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="pt-8 border-t border-white/10 flex flex-co justify-between items-center gap-4 text-smTxt text-coffee-100/40">
+                <div className="pt-8 border-t border-white/10 flex justify-between items-center gap-4 text-smTxt text-coffee-100/40">
                     <p>© 2026 Coffee'station. All rights reserved.</p>
                     <div className="flex gap-8">
                         <Link to="#">Privacy Policy</Link>
