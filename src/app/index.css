@@ -83,9 +83,6 @@ main {
 
     /*<------------- Badges ------------->*/
 
-    .icon_badge {
-        @apply w-5 h-5 bg-terracotta text-white text-sm3Txt font-bold rounded-lg flex items-center justify-center shadow-lg border-2 border-white/50
-    }
     .bestSeller_badge {
         @apply px-3.5 py-1.5 bg-terracotta rounded-full font-bold font-sans text-sm2Txt text-white
     }

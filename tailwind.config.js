@@ -49,8 +49,9 @@ export default {
         sm3Txt: "10px",
       },
       width: {
-        lg: "1536px",
-        md: "1024px",
+        lgScreen: "1536px",
+        mdScreen: "1024px",
+        smScreen: "768px"
       },
       borderRadius: {
         card: '40px',
