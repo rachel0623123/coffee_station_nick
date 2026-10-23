@@ -1,9 +1,9 @@
-import { DesignSystem } from '../pages/DesignSystem';
+import { Router } from "./router/Router";
 
 const App = () => {
   return (
     <>
-      <DesignSystem />
+      <Router/>
     </>
   );
 };

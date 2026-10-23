@@ -1,4 +1,5 @@
 import { Badge } from "../badges/Badge";
+import { CartNumBadge } from "../badges/CartNumBadge";
 import { IconBadge } from "../badges/IconBadge";
 import { GoStarFill } from "react-icons/go";
 import { LuSparkles } from "react-icons/lu";
@@ -8,10 +9,6 @@ export const BadgeSection = () => {
         <section className="ds_section">
             <h2 className="text-mdTtl mb-5 text-coffee-900">Badges</h2>
             <div className="flex flex-wrap bg-beige p-4 rounded-2xl">
-                <div className="ds_section_content">
-                    <Badge content="3" className="icon_badge"/>
-                    <p>IconBadge</p>
-                </div>
                 <div className="ds_section_content">
                     <Badge content="BEST SELLER" className="bestSeller_badge"/>
                     <p>bestSeller_badge</p>
