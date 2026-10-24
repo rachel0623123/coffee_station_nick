@@ -1,5 +1,4 @@
 import { ProductCard } from "../card/ProductCard";
-// import { products } from "../../data/products";
 import { CustomerCard } from "../card/CustomerCard";
 import { ImageCard } from "../card/ImageCard";
 
@@ -7,7 +6,7 @@ import { FiMapPin } from "react-icons/fi";
 
 import cafeSrc from "../../../assets/images/ambience/photo-1442512595331-e89e73853f31.avif";
 import aboutSrc from "../../../assets/images/photo-1495474472287-4d71bcdd2085.avif";
-import staffSrc from "../../../assets/images/staffs/photo-1517841905240-472988babdf9.avif";
+import staffSrc from "../../../assets/images/staffs/Lisa.avif";
 import mapSrc from "../../../assets/images/Screenshot_1.png";
 import cartSrc from "../../../assets/images/products/photo-1490474418585-ba9bad8fd0ea.avif";
 import productSrc from "../../../assets/images/products/photo-1490474418585-ba9bad8fd0ea.avif";
