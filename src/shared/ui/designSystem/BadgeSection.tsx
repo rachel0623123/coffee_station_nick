@@ -1,5 +1,4 @@
 import { Badge } from "../badges/Badge";
-import { CartNumBadge } from "../badges/CartNumBadge";
 import { IconBadge } from "../badges/IconBadge";
 import { GoStarFill } from "react-icons/go";
 import { LuSparkles } from "react-icons/lu";
