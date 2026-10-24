@@ -2,7 +2,7 @@ import { BiSolidQuoteRight } from "react-icons/bi";
 
 export const CustomerCard = ({name, job, content, avatar} : {name: string, job: string, content: string, avatar: string}) => {
     return (
-        <div className="min-w-[280px] w-[400px] h-[240px] glass-premium p-8 relative border border-white/30 rounded-[30px] hover:bg-white/10 transition-colors pointer-events-none select-none shadow-2xl">
+        <div className="w-[400px] h-[240px] glass-premium p-8 relative border border-white/30 rounded-[30px] hover:bg-white/10 transition-colors pointer-events-none select-none shadow-2xl">
             <div className="absolute -top-5 left-6 bg-coffee-800 rounded-full p-2.5 shadow-lg text-white text-mdTxt">
                 <BiSolidQuoteRight />
             </div>

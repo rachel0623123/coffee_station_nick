@@ -5,13 +5,13 @@ import { ImageCard } from "../card/ImageCard";
 
 import { FiMapPin } from "react-icons/fi";
 
-import cafeSrc from "../../../assets/images/ambience/photo-1442512595331-e89e73853f31.avif";
+import cafeSrc from "../../../assets/images/ambience/ambience (1).avif";
 import aboutSrc from "../../../assets/images/photo-1495474472287-4d71bcdd2085.avif";
 import staffSrc from "../../../assets/images/staffs/photo-1517841905240-472988babdf9.avif";
 import mapSrc from "../../../assets/images/Screenshot_1.png";
-import cartSrc from "../../../assets/images/products/photo-1490474418585-ba9bad8fd0ea.avif";
-import productSrc from "../../../assets/images/products/photo-1490474418585-ba9bad8fd0ea.avif";
-import customerSrc from "../../../assets/images/customers/photo-1494790108377-be9c29b29330.avif";
+import cartSrc from "../../../assets/images/products/breakfast (1).avif";
+import productSrc from "../../../assets/images/products/coffee (1).avif";
+import customerSrc from "../../../assets/images/customers/customer (1).avif";
 
 import { ContactCard } from "../card/ContactCard";
 import { CartCard } from "../card/CartCard";
