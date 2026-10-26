@@ -1,7 +1,9 @@
+import { BookingForm } from "../shared/ui/reserve/BookingForm";
+
 export const Reserve = () => {
     return (
         <main>
-            this is reserve page.
+            <BookingForm />
         </main>
     );
 }
