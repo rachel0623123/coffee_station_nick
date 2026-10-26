@@ -13,7 +13,7 @@ interface staffsType {
     avatar: string
 }
 
-export const stuffs: staffsType[] = [
+export const staffs: staffsType[] = [
     {
         name: "Manoj",
         position: "Master Barista",

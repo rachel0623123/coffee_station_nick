@@ -1,7 +1,7 @@
-import { stuffs } from "../../data/staffs";
+import { staffs } from "../../data/staffs";
 import { ImageCard } from "../card/ImageCard";
 
-export const StuffSection = () => {
+export const StaffSection = () => {
     return (
         <section className="w-full">
             <div className="w-lgScreen mx-auto px-6">
@@ -12,7 +12,7 @@ export const StuffSection = () => {
                     <p className="text-coffee-800/60 font-medium">Meet the passionate minds behind your perfect cup.</p>
                 </div>
                 <div className="grid grid-cols-3 gap-12">
-                    {stuffs.map((item, index) => {
+                    {staffs.map((item, index) => {
                         return (
                             <div className="text-center" key={index}>
                                 <ImageCard src={item.avatar} divStyle="staff_image_card" imgStyle="staff_image_card-img"/>
