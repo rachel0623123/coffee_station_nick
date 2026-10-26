@@ -57,7 +57,7 @@ main {
         @apply px-10 py-4 bg-coffee-900 text-mdTxt text-white font-sans font-bold rounded-full hover:bg-black transition-all duration-300
     }
     .flRound_light_btn {
-        @apply px-8 py-4 rounded-full text-coffee-900 bg-coffee-900/5 font-sans font-bold border-1 border-coffee-900/10 object-cover hover:scale-105 hover:bg-beige/10 hover:border-coffee-900/20 transition-all duration-300
+        @apply px-8 py-4 rounded-full text-coffee-900 bg-coffee-900/5 font-sans font-bold border-1 border-coffee-900/10 hover:scale-105 hover:bg-beige/10 hover:border-coffee-900/20 transition-all duration-300
     }
     .flRound_dark_btn-smallSize {
         @apply bg-coffee-900 py-2.5 px-6 rounded-full text-white font-bold font-sans text-smTxt transition-all duration-300
