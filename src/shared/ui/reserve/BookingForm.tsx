@@ -79,9 +79,7 @@ export const BookingForm = () => {
                                 })}
                             </div>
                         </div>
-                        <div className="mt-6" onClick={handleSubmit}>
-                            <button className="mdRound_dark_btn-bigSize w-full" type="submit">Checkout</button>
-                        </div>
+                        <button  onClick={(e) => {handleSubmit(); e.preventDefault();}} className="mdRound_dark_btn-bigSize w-full mt-6">Checkout</button>
                     </div>
                 </form>
                 <div className={`${formStatus ? "hidden" : ""} w-1/2 h-full p-12 bg-white/5 relative border-1 border-white/10`}>
@@ -93,7 +91,7 @@ export const BookingForm = () => {
                             <h3 className="text-smTtl font-serif font-bold text-coffee-900 mb-2">Table Reserved!</h3>
                             <p className="text-coffee-800/70">Confirmation sent to your email.</p>
                         </div>
-                        <div className="mt-6" onClick={() => {setFromStatus(true)}}>
+                        <div className="mt-6" onClick={() => {setFormData({name: "", date: "", guests: "1 Person", time: "09:00 AM"}); setFromStatus(true);}}>
                             <Button content="Book Another Table" className="flRound_dark_btn text-terracotta"/>
                         </div>
                     </div>
