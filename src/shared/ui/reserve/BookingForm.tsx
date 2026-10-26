@@ -38,7 +38,7 @@ export const BookingForm = () => {
                 <form className={`${formStatus ? "" : "hidden"} w-1/2 h-full p-12 bg-white/5 border-1 border-white/10 flex items-center`} onSubmit={handleSubmit}>
                     <div>
                         <div className="space-y-2">
-                            <label htmlFor="" className="text-smTxt font-bold text-coffee-900 uppercase tracking-wide ml-2">Name</label>
+                            <label className="text-smTxt font-bold text-coffee-900 uppercase tracking-wide ml-2">Name</label>
                             <div className="relative group">
                                 <LuUser className="absolute left-4 top-1/2 -translate-y-1/2 text-coffee-500 group-focus-within:text-primary transition-colors w-5 h-5"/>
                                 <input type="text" placeholder="Example Name"  value={formData.name} onChange={(e) => {setFormData({...formData, name: e.target.value})}} required 
@@ -47,7 +47,7 @@ export const BookingForm = () => {
                         </div>
                         <div className="grid grid-cols-2 gap-4 mt-6">
                             <div>
-                                <label htmlFor="" className="text-smTxt font-bold text-coffee-900 uppercase tracking-wide ml-2">Date</label>
+                                <label className="text-smTxt font-bold text-coffee-900 uppercase tracking-wide ml-2">Date</label>
                                 <div className="relative group">
                                     <LuCalendar className="absolute left-4 top-1/2 -translate-y-1/2 text-coffee-500 group-focus-within:text-primary transition-colors h-5 h-5" />
                                     <input type="date" value={formData.date} onChange={(e) => {setFormData({...formData, date: e.target.value})}} required 
@@ -55,7 +55,7 @@ export const BookingForm = () => {
                                 </div>
                             </div>
                             <div className="relative group">
-                                <label htmlFor="" className="text-smTxt font-bold text-coffee-900 uppercase tracking-wide ml-2">Guests</label>
+                                <label className="text-smTxt font-bold text-coffee-900 uppercase tracking-wide ml-2">Guests</label>
                                 <select onChange={(e) => {setFormData({...formData, guests: e.target.value})}}
                                 className="w-full bg-white/40 border border-white/30 rounded-xl py-4 px-4 text-coffee-900 focus:bg-white/70 focus:ring-2 focus:ring-primary focus:outline-none transition-all cursor-pointer">
                                     <option>1 Person</option>
@@ -67,7 +67,7 @@ export const BookingForm = () => {
                             </div>
                         </div>
                         <div className="space-y-2 mt-6">
-                            <label htmlFor="" className="text-smTxt font-bold text-coffee-900 uppercase tracking-wide ml-2">Preferred Time</label>
+                            <label className="text-smTxt font-bold text-coffee-900 uppercase tracking-wide ml-2">Preferred Time</label>
                             <div className="grid grid-cols-3 gap-3">
                                 {["09:00 AM","01:00 AM","06:00 PM"].map((item, index) => {
                                     return (
