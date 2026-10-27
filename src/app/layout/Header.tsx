@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { CartSideBar } from "../../shared/ui/CartSIdeBar";
 import { NavBar } from "../../shared/ui/NavBar";
+import { CartSideBar } from "../../shared/ui/CartSIdeBar";
 
 export const Header = () => {
 
