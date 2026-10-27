@@ -20,7 +20,7 @@ export const CartSideBar = ({isCartOpen, setIsCartOpen} : {isCartOpen : boolean,
             <div className="flex-1 overflow-y-auto p-6 space-y-4">
                 {products.map((item, index) => {
                     return (
-                        <CartCard img={item.image} name={item.name} price={5} amount={3} key={index}/>
+                        <CartCard img={item.image} name={item.name} price={item.price} amount={3} key={index}/>
                     );
                 })}
 
