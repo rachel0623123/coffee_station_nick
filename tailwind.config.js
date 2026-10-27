@@ -50,6 +50,7 @@ export default {
       },
       width: {
         lgScreen: "1536px",
+        bgScreen: "1152px",
         mdScreen: "1024px",
         smScreen: "768px"
       },
