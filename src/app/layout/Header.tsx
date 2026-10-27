@@ -9,12 +9,12 @@ const navItems = [
         path: "/",
     },
     {
-        content: "ABOUT",
-        path: "/about",
-    },
-    {
         content: "MENU",
         path: "/menu",
+    },
+    {
+        content: "ABOUT",
+        path: "/about",
     },
     {
         content: "CONTACT",
