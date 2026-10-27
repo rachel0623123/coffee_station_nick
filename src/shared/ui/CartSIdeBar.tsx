@@ -24,14 +24,14 @@ export const CartSideBar = ({isCartOpen, setIsCartOpen} : {isCartOpen : boolean,
                     );
                 })}
 
-                <div className="h-full flex flex-col items-center justify-center text-center text-coffee-800/60 hidden">
+                <div className={`h-full flex flex-col items-center justify-center text-center text-coffee-800/60 ${products.length ? "" : "hidden"}`}>
                     <LuShoppingBag className="mb-4 opacity-50 text-mdTtl"/>
                     <p className="mdTxt">Your cart is empty</p>
                     <button className="mt-4 text-primary font-bold hover:underline">Browse Menu</button>
                 </div>
             </div>
 
-            <div className="p-6 border-1 border-white/10 bg-white/5 backdrop-blur-md">
+            <div className={`p-6 border-1 border-white/10 bg-white/5 backdrop-blur-md ${products.length ? "" : "hidden"}`}>
                 <div className="flex justify-between items-center mb-6 text-xl font-bold text-coffee-900">
                     <span>Total</span>
                     <span>$18.70</span>
