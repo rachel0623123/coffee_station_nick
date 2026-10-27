@@ -1,8 +1,8 @@
 import type { IconType } from "react-icons";
 
-export const CtrlBtn = ({className, icon: Icon,}: {className: string, icon: IconType}) => {
+export const CtrlBtn = ({className, icon: Icon, onClick}: {className: string, icon: IconType, onClick?: () => void}) => {
   return (
-    <button className={className}>
+    <button className={className} onClick={onClick}>
       <Icon />
     </button>
   );

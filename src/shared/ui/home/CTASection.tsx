@@ -16,7 +16,7 @@ export const CTASection = () => {
                     Book a table today and immerse yourself in an atmosphere where every detail is crafted for your comfort.
                 </p>
                 <Link to="/reserve">
-                    <Button content="Reserve Your Experience" className="mdRound_light_btn-bigSize" />
+                    <Button content="Reserve Your Experience" className="mdRound_light_btn-bigSize"/>
                 </Link>               
             </div>
         </section>

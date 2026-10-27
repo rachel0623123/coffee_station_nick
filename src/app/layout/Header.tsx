@@ -51,7 +51,7 @@ export const Header = () => {
                     <CartNumBadge num={3} />
                 </button>
                 <Link to="/reserve">
-                    <Button content="Reserve" className="mdRound_dark_btn" />
+                    <Button content="Reserve" className="mdRound_dark_btn"/>
                 </Link>
             </div>
         </header>

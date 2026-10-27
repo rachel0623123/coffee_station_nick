@@ -77,7 +77,7 @@ export const Footer = () => {
                         <div className="flex gap-2">
                             <input type="email" className="bg-white/5 border border-white/10 rounded-xl px-4 py-2.5 text-smTxt 
                                 focus:outline-none focus:ring-1 focus:ring-terracotta w-full" placeholder="Your email"/>
-                            <Button content="Host" className="mdRound_light_btn-search" />
+                            <Button content="Host" className="mdRound_light_btn-search"/>
                         </div>
                     </div>
                 </div>
