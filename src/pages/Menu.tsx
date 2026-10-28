@@ -1,7 +1,9 @@
+import { ProductSection } from "../shared/ui/product/ProductSection";
+
 export const Menu = () => {
     return (
         <main>
-            this is menu page.
+            <ProductSection />
         </main>
     );
 }
