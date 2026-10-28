@@ -15,7 +15,7 @@ export const products: productType[] = [
         name: "Classic Latte",
         category: "Coffee",
         description: "Rich espresso with steamed milk and a light layer of foam.",
-        price: 4.500,
+        price: 4.50,
         image: "src/assets/images/products/coffee (1).avif",
         rating: 4.8
     },
@@ -24,7 +24,7 @@ export const products: productType[] = [
         name: "Macchiato",
         category: "Coffee",
         description: "Espresso with vanilla syrup, milk, and caramel drizzle.",
-        price: 5.200,
+        price: 5.20,
         image: "src/assets/images/products/coffee (2).avif",
         rating: 4.9
     },
@@ -33,7 +33,7 @@ export const products: productType[] = [
         name: "Iced Americano",
         category: "Coffee",
         description: "Bold espresso over ice and water, perfect for hot days.",
-        price: 3.500,
+        price: 3.50,
         image: "src/assets/images/products/coffee (3).avif",
         rating: 4.6
     },
@@ -42,7 +42,7 @@ export const products: productType[] = [
         name: "Cappuccino",
         category: "Coffee",
         description: "Equal parts espresso, steamed milk, and milk foam.",
-        price: 4.000,
+        price: 4.00,
         image: "src/assets/images/products/coffee (4).avif",
         rating: 4.7
     },
@@ -51,7 +51,7 @@ export const products: productType[] = [
         name: "Mocha",
         category: "Coffee",
         description: "Espresso with chocolate syrup and steamed milk.",
-        price: 5.000,
+        price: 5.00,
         image: "src/assets/images/products/coffee (5).avif",
         rating: 4.8
     },
@@ -62,7 +62,7 @@ export const products: productType[] = [
         name: "Matcha Green Tea",
         category: "Tea",
         description: "Premium Japanese matcha whisked with steamed milk.",
-        price: 5.500,
+        price: 5.50,
         image: "src/assets/images/products/tea (1).avif",
         rating: 4.9
     },
@@ -71,7 +71,7 @@ export const products: productType[] = [
         name: "Earl Grey Reserve",
         category: "Tea",
         description: "Fragrant black tea with bergamot oil and blue cornflowers.",
-        price: 4.000,
+        price: 4.00,
         image: "src/assets/images/products/tea (2).avif",
         rating: 4.7
     },
@@ -80,7 +80,7 @@ export const products: productType[] = [
         name: "Chai Latte",
         category: "Tea",
         description: "Spiced black tea concentrate mixed with steamed milk.",
-        price: 4.800,
+        price: 4.80,
         image: "src/assets/images/products/tea (3).avif",
         rating: 4.9
     },
@@ -89,7 +89,7 @@ export const products: productType[] = [
         name: "Iced Peach Tea",
         category: "Tea",
         description: "Refreshing black tea infused with peach flavor and served over ice.",
-        price: 4.200,
+        price: 4.20,
         image: "src/assets/images/products/tea (4).avif",
         rating: 4.6
     },
@@ -100,7 +100,7 @@ export const products: productType[] = [
         name: "Berry Croissant",
         category: "Desserts",
         description: "Buttery croissant filled with fresh berries and cream.",
-        price: 3.800,
+        price: 3.80,
         image: "src/assets/images/products/desserts (1).avif",
         rating: 4.9
     },
@@ -109,7 +109,7 @@ export const products: productType[] = [
         name: "Choco Lava Cake",
         category: "Desserts",
         description: "Decadent chocolate cake with a molten center.",
-        price: 6.500,
+        price: 6.50,
         image: "src/assets/images/products/desserts (2).avif",
         rating: 4.8
     },
@@ -118,7 +118,7 @@ export const products: productType[] = [
         name: "Cheesecake",
         category: "Desserts",
         description: "Creamy vanilla cheesecake with a graham cracker crust.",
-        price: 5.500,
+        price: 5.50,
         image: "src/assets/images/products/desserts (3).avif",
         rating: 4.9
     },
@@ -127,7 +127,7 @@ export const products: productType[] = [
         name: "Macarons",
         category: "Desserts",
         description: "Assorted french macarons with various fillings.",
-        price: 6.000,
+        price: 6.00,
         image: "src/assets/images/products/desserts (4).avif",
         rating: 4.7
     },
@@ -138,7 +138,7 @@ export const products: productType[] = [
         name: "Avocado Toast",
         category: "Breakfast",
         description: "Sourdough bread topped with fresh avocado, radish, and seeds.",
-        price: 8.500,
+        price: 8.50,
         image: "src/assets/images/products/breakfast (1).avif",
         rating: 4.7
     },
@@ -147,7 +147,7 @@ export const products: productType[] = [
         name: "Classic Pancakes",
         category: "Breakfast",
         description: "Fluffy pancakes served with maple syrup and butter.",
-        price: 7.000,
+        price: 7.00,
         image: "src/assets/images/products/breakfast (2).avif",
         rating: 4.6
     },
@@ -156,7 +156,7 @@ export const products: productType[] = [
         name: "Bagel with Cheese",
         category: "Breakfast",
         description: "Toasted bagel with a generous spread of cream cheese.",
-        price: 3.500,
+        price: 3.50,
         image: "src/assets/images/products/breakfast (3).avif",
         rating: 4.5
     },
@@ -165,7 +165,7 @@ export const products: productType[] = [
         name: "Granola Bowl",
         category: "Breakfast",
         description: "Greek yogurt topped with homemade granola and fresh fruits.",
-        price: 6.000,
+        price: 6.00,
         image: "src/assets/images/products/breakfast (4).avif",
         rating: 4.8
     },
