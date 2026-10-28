@@ -22,7 +22,7 @@ export const CardSection = () => {
             <h2 className="text-mdTtl mb-5 text-coffee-900">Cards</h2>
             <div className="flex flex-wrap bg-beige p-8 rounded-2xl">
                 <div className="ds_section_content">
-                    <ProductCard name="Classic Latte" description="Rich espresso with steamed milk and a light layer of foam." price="$4.50" img={productSrc} rating={4.8}/>
+                    <ProductCard name="Classic Latte" description="Rich espresso with steamed milk and a light layer of foam." price={4.50} img={productSrc} rating={4.8}/>
                 </div>
                 <div className="ds_section_content">
                     <AmbienceCard src={cafeSrc} />
