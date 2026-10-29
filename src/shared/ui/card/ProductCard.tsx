@@ -17,7 +17,7 @@ export const ProductCard = ({id, name, description, price, img, rating} : {id: s
                 <Badge content={`$${price}`} className="product_price absolute top-[20px] right-[20px]"/>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             </div>
-            <div className="w-100 h-1/2 p-6 rounded-b-[40px]">
+            <div className="w-100 h-1/2 p-6 rounded-b-[40px] flex flex-col justify-between">
                 <div className="flex justify-between mb-2">
                     <h3 className="text-bgTxt font-serif font-bold text-coffee-900">{name}</h3>
                     <IconBadge content={String(rating)} className="fav_badge" icon={GoStarFill}/>
