@@ -11,9 +11,9 @@ interface cartProductsType {
 
 type cartStoreType = {
     cartProducts: cartProductsType[];
-    totalPrict: number;
+    totalPrice: number;
     totalNum: number;
-    addToCart: (name : string) => void;
+    addToCart: (id : string) => void;
     increase: (id: string, x: number) => void,
     removeItem: (id: string) => void
 };
@@ -22,7 +22,7 @@ export const cartStore = create<cartStoreType>((set, get) => ({
 
     cartProducts: [],
 
-    totalPrict: 0,
+    totalPrice: 0,
 
     totalNum: 0,
 
@@ -37,7 +37,7 @@ export const cartStore = create<cartStoreType>((set, get) => ({
         }
 
         set((state) => ({
-            totalPrict: state.totalPrict + x * item.price,
+            totalPrice: state.totalPrice + x * item.price,
             totalNum: state.totalNum + x,
             cartProducts: state.cartProducts.map((p) => {
                 return p.id === id ? { ...p, amount: p.amount + x } : p
@@ -57,7 +57,7 @@ export const cartStore = create<cartStoreType>((set, get) => ({
         }
 
         set((state) => ({
-            totalPrict: state.totalPrict + product.price,
+            totalPrice: state.totalPrice + product.price,
             totalNum: state.totalNum + 1,
             cartProducts: [
                 ...state.cartProducts,
@@ -71,7 +71,7 @@ export const cartStore = create<cartStoreType>((set, get) => ({
         if (!product) return;
 
         set((state) => ({
-            totalPrict: state.totalPrict - product.price * product.amount,
+            totalPrice: state.totalPrice - product.price * product.amount,
             totalNum: state.totalNum - product.amount,
             cartProducts: state.cartProducts.filter((p) => p.id !== id),
         }));

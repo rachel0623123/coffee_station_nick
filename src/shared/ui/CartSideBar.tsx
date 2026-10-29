@@ -6,7 +6,7 @@ import { cartStore } from "../../store/cartStore";
 export const CartSideBar = ({isCartOpen, setIsCartOpen} : {isCartOpen : boolean, setIsCartOpen: (value: boolean) => void}) => {
 
     const cartProducts = cartStore((state) => state.cartProducts);
-    const totalPrice = cartStore((state) => state.totalPrict);
+    const totalPrice = cartStore((state) => state.totalPrice);
 
     return (
         <aside className={`fixed top-0 right-0 h-full w-full max-w-md backdrop-blur-xl z-50 shadow-2xl flex flex-col border-1 border-white/30 ${isCartOpen ? "" : "hidden"}`}>
@@ -37,7 +37,7 @@ export const CartSideBar = ({isCartOpen, setIsCartOpen} : {isCartOpen : boolean,
             <div className={`p-6 border-1 border-white/10 bg-white/5 backdrop-blur-md ${cartProducts.length ? "" : "hidden"}`}>
                 <div className="flex justify-between items-center mb-6 text-xl font-bold text-coffee-900">
                     <span>Total</span>
-                    <span>{totalPrice.toFixed(2)}</span>
+                    <span>${totalPrice.toFixed(2)}</span>
                 </div>
                 <Button className="mdRound_dark_btn-bigSize" content="Checkout"/>
             </div>
