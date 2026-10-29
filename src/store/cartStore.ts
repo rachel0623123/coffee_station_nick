@@ -1,6 +1,5 @@
 import { create } from "zustand";
 import { products } from "../shared/data/products";
-import { removeItem } from "framer-motion";
 
 interface cartProductsType {
     id: string;
@@ -12,9 +11,8 @@ interface cartProductsType {
 
 type cartStoreType = {
     cartProducts: cartProductsType[];
-
+    totalPrict: number;
     addToCart: (name : string) => void;
-    // controlCartProductNum: (x: number) => void;
     increase: (id: string, x: number) => void,
     removeItem: (id: string) => void
 };
@@ -22,6 +20,8 @@ type cartStoreType = {
 export const cartStore = create<cartStoreType>((set, get) => ({
 
     cartProducts: [],
+
+    totalPrict: 0,
 
     increase: (id, x) => {
 
@@ -34,8 +34,10 @@ export const cartStore = create<cartStoreType>((set, get) => ({
         }
 
         set((state) => ({
-            cartProducts: state.cartProducts.map((p) => 
-                p.id === id ? { ...p, amount: p.amount + x } : p
+            totalPrict: state.totalPrict + x * item.price,
+            cartProducts: state.cartProducts.map((p) => {
+                return p.id === id ? { ...p, amount: p.amount + x } : p
+            }
             ),
         }));
     },
@@ -51,6 +53,7 @@ export const cartStore = create<cartStoreType>((set, get) => ({
         }
 
         set((state) => ({
+            totalPrict: state.totalPrict + product.price,
             cartProducts: [
                 ...state.cartProducts,
                 { id: product.id, name: product.name, price: product.price, image: product.image, amount: 1 },
@@ -59,8 +62,13 @@ export const cartStore = create<cartStoreType>((set, get) => ({
     },
 
     removeItem: (id) => {
+        const product = get().cartProducts.find((p) => p.id === id);
+        if (!product) return;
+
         set((state) => ({
+            totalPrict: state.totalPrict - product.price * product.amount,
             cartProducts: state.cartProducts.filter((p) => p.id !== id),
         }));
     },
+
 }));
