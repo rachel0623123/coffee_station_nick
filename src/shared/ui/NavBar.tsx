@@ -2,6 +2,7 @@ import { LuCoffee, LuShoppingBag } from "react-icons/lu";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "../../shared/ui/buttons/Button";
 import { CartNumBadge } from "../../shared/ui/badges/CartNumBadge";
+import { cartStore } from "../../store/cartStore";
 
 const navItems = [
     {
@@ -48,7 +49,7 @@ export const NavBar = ({isCartOpen, setIsCartOpen} : {isCartOpen : boolean, setI
             <div className="flex items-center gap-8 z-20">
                 <button 
                     className="relative p-2.5 text-bgTxt text-coffee-900 hover:bg-white/20 rounded-2xl transition-all duration-300 group"
-                    onClick={() => {setIsCartOpen(!isCartOpen)}}    
+                    onClick={() => {setIsCartOpen(!isCartOpen)}}
                 >
                     <LuShoppingBag />
                     <CartNumBadge num={3} />
