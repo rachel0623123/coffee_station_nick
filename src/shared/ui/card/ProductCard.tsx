@@ -7,7 +7,6 @@ import { cartStore } from "../../../store/cartStore";
 
 export const ProductCard = ({id, name, description, price, img, rating} : {id: string, name: string, description: string, price: number, img: string, rating: number}) => {
 
-    const increase = cartStore((state) => state.increase);
     const addToCart = cartStore((state) => state.addToCart);
 
     return (

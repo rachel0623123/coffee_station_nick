@@ -7,7 +7,7 @@ import { cartStore } from "../../../store/cartStore";
 export const CartCard = ({id, img, name, price, amount} : {id: string, img: string, name: string, price: number, amount: number}) => {
 
     const increase = cartStore((state) => state.increase);
-    const removeItam = cartStore((state) => state.removeItem);
+    const removeItem = cartStore((state) => state.removeItem);
 
     const controlFun = (id: string, x: number) => {
         increase(id, x);
@@ -28,7 +28,7 @@ export const CartCard = ({id, img, name, price, amount} : {id: string, img: stri
                     </div>
                 </div>
             </div>
-            <button className="p-2 text-terracotta hover:bg-cream rounded-full transition-colors text-bgTxt" onClick={() => {removeItam(id)}}><IoCloseOutline /></button>
+            <button className="p-2 text-terracotta hover:bg-cream rounded-full transition-colors text-bgTxt" onClick={() => {removeItem(id)}}><IoCloseOutline /></button>
         </div>
     );
 }

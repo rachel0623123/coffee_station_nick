@@ -26,6 +26,7 @@ const navItems = [
 export const NavBar = ({isCartOpen, setIsCartOpen} : {isCartOpen : boolean, setIsCartOpen: (value: boolean) => void}) => {
 
     const location = useLocation();
+    const totalNum = cartStore((state) => state.totalNum);
 
     return (
         <nav className="fixed top-4 z-50 left-1/2 w-mdScreen -translate-x-1/2 py-2 px-10 rounded-full border-1 border-white/20 
@@ -52,7 +53,7 @@ export const NavBar = ({isCartOpen, setIsCartOpen} : {isCartOpen : boolean, setI
                     onClick={() => {setIsCartOpen(!isCartOpen)}}
                 >
                     <LuShoppingBag />
-                    <CartNumBadge num={3} />
+                    <CartNumBadge num={totalNum} />
                 </button>
                 <Link to="/reserve">
                     <Button content="Reserve" className="mdRound_dark_btn"/>
