@@ -34,7 +34,7 @@ export const ProductSection = () => {
                     {products.map((item) => {
                         if (actCategory === "All" || actCategory === item.category)
                         return (
-                            <ProductCard name={item.name} description={item.description} price={item.price} img={item.image} rating={item.rating} key={item.id} />
+                            <ProductCard id={item.id} name={item.name} description={item.description} price={item.price} img={item.image} rating={item.rating} key={item.id} />
                         );
                     })}
                 </div>

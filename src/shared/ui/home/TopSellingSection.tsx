@@ -16,7 +16,7 @@ export const TopSellingSection = () => {
                 {products.map((item, index) => {
                     if (item.rating >= 4.9) {
                         return (
-                            <ProductCard key={index} name={item.name} description={item.description} price={item.price} img={item.image} rating={item.rating}/>
+                            <ProductCard key={index} id={item.id} name={item.name} description={item.description} price={item.price} img={item.image} rating={item.rating}/>
                         );
                     }
                 })}
