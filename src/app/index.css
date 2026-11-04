@@ -39,10 +39,10 @@ main {
         @apply w-full py-3.5 sm:py-4 bg-coffee-900 text-terracotta rounded-xl font-bold sm:text-mdTxt hover:bg-black hover:shadow-xl transition-all active:scale-[0.98] disabled:opacity-70 disabled:cursor-not-allowed mt-2
     }
     .mdRound_light_icon_btn-hoverDark {
-        @apply w-full bg-coffee-900/5 py-3.5 text-coffee-900 transition duration-300 flex items-center justify-center font-bold rounded-2xl hover:bg-coffee-900 hover:text-white
+        @apply w-full py-3.5 bg-coffee-900/5 hover:bg-coffee-900 text-coffee-900 hover:text-white rounded-2xl font-bold flex items-center justify-center gap-2 transition-all duration-300 active:scale-95
     }
     .mdRound_light_btn-bigSize {
-        @apply px-10 py-6 bg-coffee-50 rounded-2xl text-coffee-900 text-mdTxt font-sans font-bold hover:bg-white
+        @apply px-8 sm:px-12 py-4 sm:py-5 bg-[#E6DCCF] text-coffee-950 rounded-2xl font-bold sm:text-mdTxt hover:bg-white transition-all shadow-[0_20px_50px_rgba(0,0,0,0.3)] relative overflow-hidden
     }
     .mdRound_light_btn-search {
         @apply bg-white/10 hover:bg-white/20 px-4 py-2.5 rounded-xl text-sm font-bold transition-colors
@@ -60,7 +60,7 @@ main {
         @apply px-10 py-4 bg-coffee-900 text-mdTxt text-white font-sans font-bold rounded-full hover:bg-black transition-all duration-300
     }
     .flRound_light_btn {
-        @apply px-8 py-4 rounded-full text-coffee-900 bg-coffee-900/5 font-sans font-bold border-1 border-coffee-900/10 hover:scale-105 hover:bg-beige/10 hover:border-coffee-900/20 transition-all duration-300
+        @apply px-8 py-3.5 sm:py-4 text-coffee-900 rounded-full font-bold text-smTxt sm:text-base border border-coffee-900/10 hover:border-coffee-900/20 hover:bg-white/20 w-full sm:w-auto
     }
     .flRound_dark_btn-smallSize {
         @apply px-4 sm:px-6 py-2 sm:py-2.5 rounded-full text-sm1Txt sm:text-smTxt font-bold transition-all duration-300 relative overflow-hidden whitespace-nowrap bg-coffee-900 text-white
@@ -87,10 +87,10 @@ main {
     /*<------------- Badges ------------->*/
 
     .bestSeller_badge {
-        @apply px-3.5 py-1.5 bg-terracotta rounded-full font-bold font-sans text-sm2Txt text-white
+        @apply bg-terracotta text-white px-3.5 py-1.5 rounded-full text-sm2Txt font-bold uppercase tracking-widest shadow-lg
     }
     .product_price {
-        @apply px-4 py-2 text-smTxt text-white font-bold font-sans rounded-full border-white/20 border-1 bg-coffee-900/60
+        @apply bg-coffee-900/60 backdrop-blur-md px-4 py-2 rounded-full text-smTxt font-bold text-white shadow-2xl border-1 border-white/20 flex items-center justify-center
     }
     .fav_badge {
         @apply flex items-center gap-1.5 text-terracotta text-sm font-bold bg-terracotta/10 px-2 py-0.5 rounded-lg
