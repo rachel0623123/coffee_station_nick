@@ -7,11 +7,13 @@ import { TopSellingSection } from "../shared/ui/home/TopSellingSection";
 export const Home = () => {
     return (
         <main>
-            <HeroSection />
-            <TopSellingSection />
-            <AmbienceSection />
-            <CommunityLoveSection />
-            <CTASection />
+            <div className="pb-20">
+                <HeroSection />
+                <TopSellingSection />
+                <AmbienceSection />
+                <CommunityLoveSection />
+                <CTASection />
+            </div>
         </main>
     );
 }

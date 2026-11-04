@@ -18,7 +18,6 @@ export const CTASection = () => {
                 <Link to="/reserve">
                     <Button content="Reserve Your Experience" className="mdRound_light_btn-bigSize group"/>
                 </Link>
-                    
             </div>
         </section>
     );

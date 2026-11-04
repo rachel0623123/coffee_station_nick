@@ -18,7 +18,7 @@ export const CommunityLoveSection = () => {
                     </p>
                 </div>
 
-                <div className="overflow-hidden cursor-grab active:cursor-grabbing">
+                <div className="flex gap-6 sm:gap-8 w-fit pt-10 sm:pt-12 pb-4 px-4g">
                     <Swiper
                         slidesPerView={3}
                         spaceBetween={24}

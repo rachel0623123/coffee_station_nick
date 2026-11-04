@@ -13,12 +13,6 @@ body {
     position: relative;
 }
 
-main {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    margin: auto;
-}
-
 @layer components {
     .ds_section {
         @apply bg-white p-10 mb-10 rounded-xl
@@ -42,7 +36,7 @@ main {
         @apply w-full py-3.5 bg-coffee-900/5 hover:bg-coffee-900 text-coffee-900 hover:text-white rounded-2xl font-bold flex items-center justify-center gap-2 transition-all duration-300 active:scale-95
     }
     .mdRound_light_btn-bigSize {
-        @apply px-8 sm:px-12 py-4 sm:py-5 bg-[#E6DCCF] text-coffee-950 rounded-2xl font-bold sm:text-mdTxt hover:bg-white transition-all shadow-[0_20px_50px_rgba(0,0,0,0.3)] relative overflow-hidden
+        @apply px-8 sm:px-12 py-4 sm:py-5 bg-beige text-coffee-950 rounded-2xl font-bold sm:text-mdTxt hover:bg-white transition-all shadow-[0_20px_50px_rgba(0,0,0,0.3)] relative overflow-hidden
     }
     .mdRound_light_btn-search {
         @apply bg-white/10 hover:bg-white/20 px-4 py-2.5 rounded-xl text-sm font-bold transition-colors

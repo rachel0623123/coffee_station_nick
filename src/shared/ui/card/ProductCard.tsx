@@ -10,7 +10,7 @@ export const ProductCard = ({id, name, description, price, img, rating} : {id: s
     const addToCart = cartStore((state) => state.addToCart);
 
     return (
-        <div className="glass-premium rounded-[32px] overflow-hidden group relative hover:shadow-2xl transition-all duration-500 border border-white/20">
+        <div className="rounded-[32px] overflow-hidden group relative hover:shadow-2xl transition-all duration-500 border border-white/20">
             <div className="relative h-56 overflow-hidden">
                 <img src={img} alt={name} className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out"/>
                 <Badge content="BEST SELLER" className={`bestSeller_badge absolute top-4 left-4 ${rating < 4.9 ? "hidden" : ""}`}/>

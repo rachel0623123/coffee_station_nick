@@ -14,10 +14,10 @@ export const TopSellingSection = () => {
                     <p className="text-coffee-800/80 max-w-2xl mx-auto sm:text-mdTxt font-medium">Handpicked favorites that defining our passion for coffee and comfort.</p>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-                    {products.map((item, index) => {
+                    {products.map((item) => {
                         if (item.rating >= 4.9) {
                             return (
-                                <ProductCard key={index} id={item.id} name={item.name} description={item.description} price={item.price} img={item.image} rating={item.rating}/>
+                                <ProductCard key={item.id} id={item.id} name={item.name} description={item.description} price={item.price} img={item.image} rating={item.rating}/>
                             );
                         }
                     })}
