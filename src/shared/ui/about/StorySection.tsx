@@ -7,7 +7,7 @@ export const StorySection = () => {
         <section className="container mx-auto px-6 relative z-10">
             <div className="text-center mb-16 sm:mb-24">
                 <p className="text-terracotta font-bold uppercase tracking-[0.3em] sm:tracking-[0.4em] text-sm3Txt sm:text-sm1Txt mb-3 sm:mb-4">Our Heritage</p>
-                <h1 className="text-bgTtl sm:text-lgTtl md:text-7xl font-bold text-coffee-900 mb-6 sm:mb-8 font-serif italic">
+                <h1 className="text-Ttl sm:text-bgTtl md:text-lgTtl font-bold text-coffee-900 mb-6 sm:mb-8 font-serif italic">
                     The <span className="not-italic">Story</span>
                 </h1>
                 <p className="text-mdTxt sm:text-bgTxt text-coffee-800/70 max-w-2xl mx-auto font-medium leading-relaxed">From a solitary bean to a shared sanctuary. We've been crafting moments of comfort and connection since our first pour.</p>
