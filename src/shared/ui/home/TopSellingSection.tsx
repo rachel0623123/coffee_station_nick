@@ -22,9 +22,11 @@ export const TopSellingSection = () => {
                         }
                     })}
                 </div>
-                <Link to="/menu" className="text-center mt-16 block">
-                    <Button content="View Full Menu →" className="flRound_dark_btn-aftIcon"/>
-                </Link>
+                <div className="text-center mt-12 sm:mt-16">
+                    <Link to="/menu">
+                        <Button content="View Full Menu →" className="flRound_dark_btn-aftIcon"/>
+                    </Link>
+                </div>
             </div>
         </section>
     );
