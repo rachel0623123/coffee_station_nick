@@ -21,7 +21,7 @@ export const AmbienceSection = () => {
             <div className="flex gap-6 py-4">
                 <Swiper
                     modules={[Autoplay, FreeMode]}
-                    slidesPerView={1}
+                    slidesPerView={"auto"}
                     spaceBetween={24}
                     loop={true}
                     freeMode={true}

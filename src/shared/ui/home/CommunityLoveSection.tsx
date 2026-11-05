@@ -20,7 +20,7 @@ export const CommunityLoveSection = () => {
 
                 <div className="flex gap-6 sm:gap-8 w-full pt-10 sm:pt-12 pb-4 px-4">
                     <Swiper
-                        slidesPerView={3}
+                        slidesPerView={1}
                         spaceBetween={24}
                         breakpoints={{
                             640:  { slidesPerView: 2, spaceBetween: 20 },   // 640px and up
@@ -30,7 +30,7 @@ export const CommunityLoveSection = () => {
                     >
                         {customer.map((item, index) => {
                             return (
-                                <SwiperSlide key={index} className="!w-auto !py-10">
+                                <SwiperSlide key={index} className="!py-10">
                                     <CustomerCard name={item.name} job={item.job} content={item.content} avatar={item.image} key={index} />
                                 </SwiperSlide>
                             );
