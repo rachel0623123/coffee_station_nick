@@ -23,8 +23,8 @@ export const CommunityLoveSection = () => {
                         slidesPerView={1}
                         spaceBetween={24}
                         breakpoints={{
-                            640:  { slidesPerView: 2, spaceBetween: 20 },   // 640px and up
-                            1024: { slidesPerView: 3, spaceBetween: 24 },   // 1024px and up
+                            640:  { slidesPerView: 2, spaceBetween: 20 },
+                            1024: { slidesPerView: 3, spaceBetween: 24 },
                         }}
                         className="mySwiper cursor-pointer"
                     >

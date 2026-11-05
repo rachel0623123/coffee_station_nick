@@ -28,10 +28,6 @@ export const AmbienceSection = () => {
                     speed={6000}
                     autoplay={{ delay: 1, disableOnInteraction: false, pauseOnMouseEnter: true }}
                     allowTouchMove={true}
-                    breakpoints={{
-                        640:  { slidesPerView: 2, spaceBetween: 20 },   // 640px and up
-                        1024: { slidesPerView: 3, spaceBetween: 24 },   // 1024px and up
-                    }}
                     className="mySwiper py-10"
                     style={{ "--swiper-wrapper-transition-timing-function": "linear" } as React.CSSProperties}
                 >
