@@ -16,14 +16,14 @@ export const ProductSection = () => {
                     <p className="sm:text-mdTxt text-coffee-800/80 max-w-2xl mx-auto">Explore our full range of handcrafted beverages and delicious treats.</p>
                 </div>
                 <div className="sticky top-24 sm:top-28 z-30 mb-8 sm:mb-12 flex justify-center">
-                    <div className="px-1.5 py-1.5 rounded-full flex gap-1 sm:gap-2 overflow-x-auto shadow-lg max-w-[95vw] sm:max-w-full no-scrollbar">
-                        {category.map((item, index) => {
+                    <div className="px-1.5 py-1.5 rounded-full flex gap-1 sm:gap-2 overflow-x-auto shadow-lg max-w-[95vw] sm:max-w-full bg-white/40 backdrop-blur-2xl">
+                        {category.map((item) => {
                             
                             return (
                                 <Button 
-                                    className={actCategory === item ? `flRound_dark_btn-smallSize group` : `flRound_light_btn-smallSize groups`} 
+                                    className={actCategory === item ? `flRound_dark_btn-smallSize group` : `flRound_light_btn-smallSize group`} 
                                     content={item} 
-                                    key={index}
+                                    key={item}
                                     onClick={() => {setActCategory(item)}}
                                 />
                             );
