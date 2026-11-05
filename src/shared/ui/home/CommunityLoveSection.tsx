@@ -18,10 +18,14 @@ export const CommunityLoveSection = () => {
                     </p>
                 </div>
 
-                <div className="flex gap-6 sm:gap-8 w-fit pt-10 sm:pt-12 pb-4 px-4g">
+                <div className="flex gap-6 sm:gap-8 w-full pt-10 sm:pt-12 pb-4 px-4">
                     <Swiper
                         slidesPerView={3}
                         spaceBetween={24}
+                        breakpoints={{
+                            640:  { slidesPerView: 2, spaceBetween: 20 },   // 640px and up
+                            1024: { slidesPerView: 3, spaceBetween: 24 },   // 1024px and up
+                        }}
                         className="mySwiper cursor-pointer"
                     >
                         {customer.map((item, index) => {
