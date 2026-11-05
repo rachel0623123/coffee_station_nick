@@ -3,9 +3,9 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "../../shared/ui/buttons/Button";
 import { CartNumBadge } from "../../shared/ui/badges/CartNumBadge";
 import { cartStore } from "../../store/cartStore";
-import { CtrlBtn } from "./buttons/CtrlBtn";
 import { useContext } from "react";
-import { NavContext } from "../../store/NavContext";
+import { NavContext } from "../../app/context/NavContext";
+import { HamurgerBtn } from "./buttons/HamurgerBtn";
 
 export const NavBar = ({isCartOpen, isDropMenuOpen, setIsCartOpen, setIsDropMenuOpen} : {isCartOpen : boolean, isDropMenuOpen : boolean, setIsCartOpen: (value: boolean) => void, setIsDropMenuOpen: (value: boolean) => void}) => {
 
@@ -14,13 +14,13 @@ export const NavBar = ({isCartOpen, isDropMenuOpen, setIsCartOpen, setIsDropMenu
     const navItems = useContext(NavContext);
 
     return (
-        <nav className="fixed top-4 z-50 left-1/2 w-[94%] sm:w-[90%] max-w-5xl py-2 px-4 md:px-10 rounded-[28px] border border-white/20 shadow-2xl backdrop-blur-xl transition-all duration-500 ease-in-out flex items-center justify-between bg-white/10 -translate-x-1/2">
+        <nav className="fixed top-4 z-50 left-1/2 w-[94%] sm:w-[90%] max-w-5xl py-2 px-4 md:px-10 rounded-[28px] border border-white/20 shadow-2xl backdrop-blur-xl  bg-white/40 transition-all duration-500 ease-in-out flex items-center justify-between -translate-x-1/2">
             <Link to="/" className="flex items-center gap-2 text-bgTxt sm:text-lgTxt font-bold text-coffee-900 tracking-tight shrink-0 z-20 font-serif group">
                 <span className="p-1.5 sm:p-2 bg-coffee-900 rounded-xl sm:rounded-2xl text-white group-hover:rotate-12 transition-transform duration-300">
                     <LuCoffee />
                 </span>
-                <span className="md:hidden lg:inline">
-                    Ciffee
+                <span>
+                    Coffee
                     <span className="text-coffee-600 font-normal italic">'station</span>
                 </span>
             </Link>
@@ -42,7 +42,7 @@ export const NavBar = ({isCartOpen, isDropMenuOpen, setIsCartOpen, setIsDropMenu
                 <Link to="/reserve">
                     <Button content="Reserve" className="mdRound_dark_btn hidden md:block"/>
                 </Link>
-                <CtrlBtn icon={isDropMenuOpen ? LuX : LuMenu} className="mdRound_dark_btn-icon md:hidden" onClick={() => {setIsDropMenuOpen(!isDropMenuOpen)}}/>
+                <HamurgerBtn icon={isDropMenuOpen ? LuX : LuMenu} className="mdRound_dark_btn-icon md:hidden" onClick={() => {setIsDropMenuOpen(!isDropMenuOpen)}}/>
             </div>
         </nav>
     );

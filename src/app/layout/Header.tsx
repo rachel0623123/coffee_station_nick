@@ -11,8 +11,8 @@ export const Header = () => {
     return (
         <header>
             <NavBar isCartOpen={isCartOpen} setIsCartOpen={setIsCartOpen} isDropMenuOpen={isDropMenuOpen} setIsDropMenuOpen={setIsDropMenuOpen}/>
-            <DropMenu isDropMenuOpen={isDropMenuOpen} />
-            <div className={`fixed inset-0 backdrop-blur-xl bg-black/20 backdrop-blur-sm z-40 ${isCartOpen ? "" : "hidden"}`} onClick={() => {setIsCartOpen(false)}}></div>
+            <DropMenu isDropMenuOpen={isDropMenuOpen} setIsDropMenuOpen={setIsDropMenuOpen} />
+            <div className={`fixed inset-0 backdrop-blur-xl bg-black/20 backdrop-blur-sm z-40 ${isCartOpen || isDropMenuOpen ? "" : "hidden"}`} onClick={() => {setIsCartOpen(false); setIsDropMenuOpen(false);}}></div>
             <CartSideBar isCartOpen={isCartOpen} setIsCartOpen={setIsCartOpen}/>
         </header>
     );

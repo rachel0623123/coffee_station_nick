@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { LuInstagram, LuFacebook, LuTwitter } from "react-icons/lu";
 import { Button } from "../../shared/ui/buttons/Button";
 import { useContext } from "react";
-import { NavContext } from "../../store/NavContext";
+import { NavContext } from "../context/NavContext";
 
 const links = [LuInstagram, LuFacebook, LuTwitter];
 

@@ -1,20 +1,21 @@
 import { useContext } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { NavContext } from "../../store/NavContext";
+import { NavContext } from "../../app/context/NavContext";
 
-export const DropMenu = ({isDropMenuOpen} : {isDropMenuOpen : boolean}) => {
+export const DropMenu = ({isDropMenuOpen, setIsDropMenuOpen} : {isDropMenuOpen : boolean, setIsDropMenuOpen: (value: boolean) => void}) => {
 
     const navItems = useContext(NavContext);
     const location = useLocation();
 
     return (
-        <div className={`fixed top-24 left-1/2 w-[94%] rounded-[32px] sm:rounded-[40px] z-50 p-8 sm:p-10 shadow-2xl flex flex-col items-center gap-6 sm:gap-8 border border-white/40 -translate-x-1/2 backdrop-blur-3xl ${isDropMenuOpen ? "" : "hidden"}`}>
+        <div className={`fixed top-24 left-1/2 w-[94%] rounded-[32px] sm:rounded-[40px] z-50 p-8 sm:p-10 shadow-2xl flex flex-col items-center gap-6 sm:gap-8 border border-white/40 -translate-x-1/2 bg-white/40 md:hidden backdrop-blur-3xl ${isDropMenuOpen ? "" : "hidden"}`}>
             <div className="flex flex-col gap-4 sm:gap-6 w-full text-center">
-                {navItems.map((item, index) => {
+                {navItems.map((item) => {
                     return (
-                        <div className="opacity: 1; transform: none;" key={index}>
+                        <div key={item.path}>
                             <Link 
-                                to={item.path} 
+                                to={item.path}
+                                onClick={() => {setIsDropMenuOpen(false)}}
                                 className={`text-bgTxt sm:text-lgTxt font-serif font-bold transition-all ${item.path === location.pathname ? "text-terracotta italic" : "text-coffee-900"}`}
                             >
                                 {item.content}

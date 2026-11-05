@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
-import { NavContext } from "../../store/NavContext";
+import { NavContext } from "../context/NavContext";
 import { navItems } from "../../shared/data/navItems";
 
 export const Layout = () =>{
