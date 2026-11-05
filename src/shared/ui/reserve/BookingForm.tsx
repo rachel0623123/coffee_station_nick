@@ -34,8 +34,9 @@ export const BookingForm = () => {
                         </div>
                     </div>
 
-                    <form className={`${isFormVisible ? "" : "hidden"} p-6 sm:p-8 md:p-12 bg-white/5 lg:bg-transparent relative border-t lg:border-t-0 border-white/10`} onSubmit={(e) => {setIsFormVisible(false); e.preventDefault()}}>
-                        <div className="space-y-4 sm:space-y-6 h-full flex flex-col justify-center">
+                    <div className="p-6 sm:p-8 md:p-12 bg-white/5 lg:bg-transparent relative border-t lg:border-t-0 border-white/10">
+
+                        <form className={`${isFormVisible ? "" : "hidden"} space-y-4 sm:space-y-6 h-full flex flex-col justify-center`} onSubmit={(e) => {setIsFormVisible(false); e.preventDefault()}}>
                             <div className="space-y-1.5 sm:space-y-2">
                                 <label className="booking_form_label" htmlFor="name">Name</label>
                                 <div className="relative group">
@@ -101,11 +102,9 @@ export const BookingForm = () => {
                                 className="mdRound_dark_btn-bigSize"
                                 type="submit"
                             />
-                        </div>
-                    </form>
+                        </form>
 
-                    <div className={`${isFormVisible ? "hidden" : ""} p-6 sm:p-8 md:p-12 bg-white/5 lg:bg-transparent relative border-t lg:border-t-0 border-white/10`}>
-                        <div className="h-full flex flex-col items-center justify-center text-center space-y-4 sm:space-y-6 py-10 sm:py-0">
+                        <div className={`${isFormVisible ? "hidden" : ""} h-full flex flex-col items-center justify-center text-center space-y-4 sm:space-y-6 py-10 sm:py-0`}>
                             <div className="w-20 h-20 sm:w-24 sm:h-24 bg-green-500 rounded-full flex items-center justify-center text-mdTtl text-white shadow-lg shadow-green-500/30">
                                 <LuCheck className="w-12 h-12"/>
                             </div>
@@ -115,7 +114,9 @@ export const BookingForm = () => {
                             </div>
                             <Button content="Book Another Table" className="flRound_dark_btn text-terracotta mt-6" onClick={() => {setFormData({name: "", date: "", guests: "2 People", time: "09:00 AM"}); setIsFormVisible(true);}}/>
                         </div>
+                        
                     </div>
+
 
                 </div>
             </div>
