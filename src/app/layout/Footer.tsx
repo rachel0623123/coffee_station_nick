@@ -81,7 +81,7 @@ export const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="pt-6 sm:pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm3Txt sm:text-smTxt text-coffee-100/40">
+                <div className="pt-6 sm:pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm1Txt sm:text-smTxt text-coffee-100/40">
                     <p>© 2026 Coffee'station. All rights reserved.</p>
                     <div className="flex gap-6 sm:gap-8">
                         <Link to="#">Privacy Policy</Link>
