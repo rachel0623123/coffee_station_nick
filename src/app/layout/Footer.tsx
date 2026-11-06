@@ -1,14 +1,11 @@
 import { Link } from "react-router-dom";
 import { LuInstagram, LuFacebook, LuTwitter } from "react-icons/lu";
 import { Button } from "../../shared/ui/buttons/Button";
-import { useContext } from "react";
-import { NavContext } from "../context/NavContext";
+import { navItems } from "../../shared/data/navItems";
 
 const links = [LuInstagram, LuFacebook, LuTwitter];
 
 export const Footer = () => {
-
-    const navItems = useContext(NavContext);
 
     return (
         <footer className="bg-coffee-950 text-coffee-100 pt-20 pb-10 relative overflow-hidden">

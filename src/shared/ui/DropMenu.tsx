@@ -1,10 +1,8 @@
-import { useContext } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { NavContext } from "../../app/context/NavContext";
+import { navItems } from "../data/navItems";
 
 export const DropMenu = ({isDropMenuOpen, setIsDropMenuOpen} : {isDropMenuOpen : boolean, setIsDropMenuOpen: (value: boolean) => void}) => {
 
-    const navItems = useContext(NavContext);
     const location = useLocation();
 
     return (
