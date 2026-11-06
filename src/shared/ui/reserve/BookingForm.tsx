@@ -21,7 +21,7 @@ export const BookingForm = () => {
                                 Reserve Your <br />
                                 <span className="text-primary italic">Moment</span>
                             </h2>
-                            <p className="sm:text-mdTxt text-coffee-800/80 max-w-sm sm:max-w-md">Secure the best spot in the house. Whether for a quiet coffee or a lively brunch, we're ready for you.</p>
+                            <p className="sm:text-mdTxt text-coffee-800/80 max-w-sm sm:max-w-md pb-6">Secure the best spot in the house. Whether for a quiet coffee or a lively brunch, we're ready for you.</p>
                         </div>
                         <div className="flex items-center gap-3 sm:gap-4 text-coffee-900 font-medium bg-white/30 p-3 sm:p-4 rounded-xl sm:rounded-2xl backdrop-blur-sm border border-white/10">
                             <p className="w-8 h-8 sm:w-10 sm:h-10 bg-white/50 rounded-full flex items-center justify-center text-bgTxt text-coffee-900">
