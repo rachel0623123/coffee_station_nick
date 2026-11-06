@@ -32,6 +32,9 @@ main {
     .mdRound_dark_btn {
         @apply bg-coffee-900 px-8 py-3 rounded-2xl text-white font-bold text-smTxt font-sans hover:bg-black  transition-all duration-300
     }
+    .mdRound_dark_btn-icon {
+        @apply p-2.5 bg-coffee-900 text-white rounded-xl focus:outline-none transition-transform active:scale-90 text-bgTxt
+    }
     .mdRound_dark_btn-bigSize {
         @apply w-full py-3.5 sm:py-4 bg-coffee-900 text-terracotta rounded-xl font-bold sm:text-mdTxt hover:bg-black hover:shadow-xl transition-all active:scale-[0.98] disabled:opacity-70 disabled:cursor-not-allowed mt-2
     }
@@ -74,10 +77,10 @@ main {
         @apply w-6 h-6 rounded-full bg-white/30 flex items-center justify-center hover:bg-white/50 transition-colors text-smTxt
     }
     .nav_btn_header {
-        @apply text-sm font-bold tracking-widest transition-all duration-300 relative uppercase text-coffee-900/50 hover:text-coffee-900
+        @apply text-sm1Txt lg:text-smTxt font-bold tracking-widest transition-all duration-300 relative uppercase text-coffee-900/50 hover:text-coffee-900
     }
     .nav_btn_header-act {
-        @apply text-sm font-bold tracking-widest transition-all duration-300 relative uppercase text-coffee-900
+        @apply text-sm1Txt lg:text-smTxt font-bold tracking-widest transition-all duration-300 relative uppercase text-coffee-900
     }
 
 

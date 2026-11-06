@@ -1,28 +1,12 @@
 import { Link } from "react-router-dom";
 import { LuInstagram, LuFacebook, LuTwitter } from "react-icons/lu";
 import { Button } from "../../shared/ui/buttons/Button";
+import { navItems } from "../../shared/data/navItems";
 
 const links = [LuInstagram, LuFacebook, LuTwitter];
-const navItems = [
-    {
-        content: "Home",
-        path: "/" 
-    },
-    {
-        content: "About Us",
-        path: "/about" 
-    },
-    {
-        content: "Our Menu",
-        path: "/menu" 
-    },
-    {
-        content: "Contact",
-        path: "/contact" 
-    },
-];
 
 export const Footer = () => {
+
     return (
         <footer className="bg-coffee-950 text-coffee-100 pt-16 sm:pt-20 pb-8 sm:pb-10 relative overflow-hidden">
             <div className="container mx-auto px-6 relative z-10">
