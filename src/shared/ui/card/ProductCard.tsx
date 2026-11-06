@@ -23,7 +23,7 @@ export const ProductCard = ({id, name, description, price, img, rating} : {id: s
                     <IconBadge content={String(rating)} className="fav_badge" icon={GoStarFill}/>
                 </div>
                 <p className="text-coffee-800/60 text-smTxt leading-relaxed line-clamp-2 mb-6 font-medium">{description}</p>
-                <IconButton icon={FaPlus} content="Add to Order" className="mdRound_light_icon_btn-hoverDark group/btn" onClick={() => {addToCart(id);}}/>
+                <IconButton icon={FaPlus} content="Add to Order" className="mdRound_light_icon_btn-hoverDark" onClick={() => {addToCart(id);}}/>
             </div>
         </div>
     );
