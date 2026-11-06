@@ -38,7 +38,7 @@ export const NavBar = ({isCartOpen, isDropMenuOpen, setIsCartOpen, setIsDropMenu
                     <CartNumBadge num={totalNum} />
                 </button>
                 <Link to="/reserve">
-                    <Button content="Reserve" className="mdRound_dark_btn hidden md:block shadow-xl"/>
+                    <Button content="Reserve" className="mdRound_dark_btn hidden lg:block"/>
                 </Link>
                 <HamburgerBtn
                     icon={isDropMenuOpen ? LuX : LuMenu}

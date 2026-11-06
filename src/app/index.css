@@ -30,7 +30,7 @@ main {
     /*<------------- Buttons ------------->*/
 
     .mdRound_dark_btn {
-        @apply px-8 py-3 bg-coffee-900 text-white text-smTxt font-bold rounded-2xl hover:bg-black transition-all shadow-xl hover:-translate-y-0.5 active:translate-y-0
+        @apply bg-coffee-900 px-8 py-3 rounded-2xl text-white font-bold text-smTxt font-sans hover:bg-black  transition-all duration-300
     }
     .mdRound_dark_btn-icon {
         @apply p-2.5 bg-coffee-900 text-white rounded-xl focus:outline-none transition-transform active:scale-90 text-bgTxt
