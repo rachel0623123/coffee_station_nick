@@ -11,10 +11,10 @@ export const HeroSection = () => {
                     <p className="text-base sm:text-lg lg:text-xl text-coffee-800/80 max-w-lg mx-auto lg:mx-0 font-medium leading-relaxed">Experience coffee crafted with passion, served in liquid glass elegance. Warmth in every cup.</p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2 sm:pt-4">
                         <Link to="/reserve">
-                            <Button content="Order Now" className="flRound_dark_btn w-full"/>
+                            <Button content="Order Now" className="flRound_dark_btn w-full sm:w-auto"/>
                         </Link>
                         <Link to="/menu">
-                            <Button content="View Full Menu" className="flRound_light_btn"/>
+                            <Button content="View Full Menu" className="flRound_light_btn w-full sm:w-auto"/>
                         </Link>
                     </div>
                 </div>
