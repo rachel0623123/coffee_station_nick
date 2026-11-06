@@ -112,7 +112,7 @@ export const BookingForm = () => {
                                 <h3 className="text-lgTxt sm:text-smTtl font-serif font-bold text-coffee-900 mb-2">Table Reserved!</h3>
                                 <p className="text-coffee-800/70 text-smTxt sm:text-base">Confirmation sent to your email.</p>
                             </div>
-                            <Button content="Book Another Table" className="flRound_dark_btn text-terracotta mt-6" onClick={() => {setFormData({name: "", date: "", guests: "2 People", time: "09:00 AM"}); setIsFormVisible(true);}}/>
+                            <Button content="Book Another Table" className="flRound_dark_btn mt-6" onClick={() => {setFormData({name: "", date: "", guests: "2 People", time: "09:00 AM"}); setIsFormVisible(true);}}/>
                         </div>
                         
                     </div>
