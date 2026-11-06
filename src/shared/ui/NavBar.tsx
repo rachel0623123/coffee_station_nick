@@ -40,7 +40,13 @@ export const NavBar = ({isCartOpen, isDropMenuOpen, setIsCartOpen, setIsDropMenu
                 <Link to="/reserve">
                     <Button content="Reserve" className="mdRound_dark_btn hidden md:block"/>
                 </Link>
-                <HamburgerBtn icon={isDropMenuOpen ? LuX : LuMenu} className="mdRound_dark_btn-icon md:hidden" onClick={() => {setIsDropMenuOpen(!isDropMenuOpen)}}/>
+                <HamburgerBtn
+                    icon={isDropMenuOpen ? LuX : LuMenu}
+                    className="mdRound_dark_btn-icon md:hidden"
+                    onClick={() => {setIsDropMenuOpen(!isDropMenuOpen)}}
+                    ariaLabel={isDropMenuOpen ? "Close menu" : "Open menu"}
+                    ariaExpanded={isDropMenuOpen}
+                />
             </div>
         </nav>
     );
