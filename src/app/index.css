@@ -113,9 +113,9 @@ main {
     }
     
     .map_image_card {
-        @apply relative p-4 rounded-card-lg shadow-2xl border border-white/40 overflow-hidden
+        @apply relative p-4 rounded-[32px] sm:rounded-card shadow-2xl border border-white/40 overflow-hidden
     }
     .map_image_card-img {
-        @apply w-full h-full object-cover rounded-card-lg
+        @apply w-full h-full object-cover rounded-[24px] sm:rounded-card-lg
     }
 }
