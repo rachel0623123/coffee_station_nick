@@ -8,7 +8,7 @@ export const BookingForm = () => {
     const [formData, setFormData] = useState({name: "", date: "", guests: "2 People", time: "09:00 AM"})
     
     return (
-        <section className="min-h-screen py-24 sm:py-32 px-4 sm:px-6 relative overflow-hidden flex items-center justify-center mt-8 sm:mt-12">
+        <section className="min-h-screen relative overflow-hidden flex items-center justify-center mt-8 sm:mt-12">
 
             <div className="container mx-auto max-w-6xl relative z-10">
 
