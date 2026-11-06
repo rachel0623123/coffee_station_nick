@@ -12,7 +12,7 @@ export const HeroSection = () => {
                     <p className="text-base sm:text-lg md:text-xl text-coffee-800/80 max-w-lg mx-auto md:mx-0 font-medium leading-relaxed">Experience coffee crafted with passion, served in liquid glass elegance. Warmth in every cup.</p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-2 sm:pt-4">
                         <Link to="/reserve">
-                            <Button content="Order Now" className="flRound_dark_btn"/>
+                            <Button content="Order Now" className="flRound_dark_btn w-full"/>
                         </Link>
                         <Link to="/menu">
                             <Button content="View Full Menu" className="flRound_light_btn"/>
