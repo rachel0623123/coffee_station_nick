@@ -51,7 +51,7 @@ main {
         @apply py-2.5 sm:py-3 rounded-xl text-sm1Txt sm:text-smTxt font-medium transition-all border bg-coffee-900 text-white border-coffee-900 shadow-lg scale-105
     }
     .flRound_dark_btn {
-        @apply px-6 sm:px-8 py-2.5 sm:py-3 bg-coffee-900 text-terracotta rounded-full font-bold hover:bg-black transition-all shadow-lg hover:shadow-xl
+        @apply px-8 py-3.5 sm:py-4 bg-coffee-900 text-white rounded-full font-bold text-smTxt sm:text-base hover:bg-black hover:shadow-2xl transition-all
     }
     .flRound_dark_btn-aftIcon {
         @apply px-10 py-4 bg-coffee-900 text-mdTxt text-white font-sans font-bold rounded-full hover:bg-black transition-all duration-300
