@@ -60,10 +60,10 @@ main {
         @apply px-8 py-4 rounded-full text-coffee-900 bg-coffee-900/5 font-sans font-bold border-1 border-coffee-900/10 hover:scale-105 hover:bg-beige/10 hover:border-coffee-900/20 transition-all duration-300
     }
     .flRound_dark_btn-smallSize {
-        @apply bg-coffee-900 py-2.5 px-6 rounded-full text-white font-bold font-sans text-smTxt transition-all duration-300
+        @apply px-4 sm:px-6 py-2 sm:py-2.5 rounded-full text-sm1Txt sm:text-smTxt font-bold transition-all duration-300 relative overflow-hidden whitespace-nowrap bg-coffee-900 text-white
     }
     .flRound_light_btn-smallSize {
-        @apply bg-transparent py-2.5 px-6 rounded-full text-coffee-800 font-bold font-sans text-smTxt transition-all duration-300 hover:bg-white/40 hover:text-coffee-900
+        @apply px-4 sm:px-6 py-2 sm:py-2.5 rounded-full text-sm1Txt sm:text-smTxt font-bold transition-all duration-300 relative overflow-hidden whitespace-nowrap bg-transparent text-coffee-800 hover:bg-white/40 hover:text-coffee-900
     }
 
 
