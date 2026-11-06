@@ -24,9 +24,9 @@ const navItems = [
 
 export const Footer = () => {
     return (
-        <footer className="bg-coffee-950 text-coffee-100 pt-20 pb-10 relative overflow-hidden">
+        <footer className="bg-coffee-950 text-coffee-100 pt-16 sm:pt-20 pb-8 sm:pb-10 relative overflow-hidden">
             <div className="container mx-auto px-6 relative z-10">
-                <div className="grid grid-cols-4 gap-12 mb-16">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-12 lg:gap-8 mb-12 sm:mb-16">
                     <div>
                         <h3 className="text-smTtl font-bold font-serif text-white flex items-center gap-2">
                             Coffee
@@ -81,9 +81,9 @@ export const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="pt-8 border-t border-white/10 flex justify-between items-center gap-4 text-smTxt text-coffee-100/40">
+                <div className="pt-6 sm:pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm1Txt sm:text-smTxt text-coffee-100/40">
                     <p>© 2026 Coffee'station. All rights reserved.</p>
-                    <div className="flex gap-8">
+                    <div className="flex gap-6 sm:gap-8">
                         <Link to="#">Privacy Policy</Link>
                         <Link to="#">Terms of Service</Link>
                     </div>
