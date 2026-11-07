@@ -13,12 +13,6 @@ body {
     position: relative;
 }
 
-main {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    margin: auto;
-}
-
 @layer components {
     .ds_section {
         @apply bg-white p-10 mb-10 rounded-xl
